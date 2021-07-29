@@ -1,0 +1,85 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    background-color: #181818;
+}
+
+.nav-item:hover{
+    background-color: rgba(222, 69, 53, 1);
+    border-radius: .3rem;
+}
+
+/*header image*/
+.jumbotron-fluid {
+    background-image: url("brickPizza.png");
+    /*up to -ms-filter used to flip background image*/
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    text-align: left;
+    height:60vh;
+}
+
+/*flipped the text, as jumbotron had to be flipped*/
+.jumbotron .container {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+
+.jumbotron-fluid h1 span, .jumbotron-fluid p i{
+    background-color: rgba(24, 24, 24, .8);
+    border-radius: 20px;
+}
+
+
+.sectionTitle, .container_pizzaOptions, .container_about, .container_dessertOptions {
+    padding: 2rem;
+    text-align: center;
+
+
+}
+
+.col-md {
+    padding-bottom: 2rem;
+}
+
+.card-body .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contactUs {
+    background-color: #181818;
+    color: white;
+}
+
+.contactUs .row {
+    margin: 0px;
+}
+
+.contactInfo {
+    font-size: 1.1rem;
+}
+
+hr {
+    border-top: double lightgray;
+}
+
+iframe {
+    width: inherit;
+    height: 18rem;
+}
