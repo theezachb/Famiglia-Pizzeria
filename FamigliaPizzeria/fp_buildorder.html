@@ -4,6 +4,7 @@
     <title>Famiglia Pizzeria</title>
     <link rel="icon" href="https://pngimg.com/uploads/pizza/pizza_PNG7136.png">
   
+    
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="scripts.js"></script>
@@ -15,12 +16,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="fp_index.css" rel="stylesheet" />
+    <script src="fp_orderform.js"></script>
   </head>
+
   <body>
-  
     <!--Navigation bar-->  
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="fp_home.html">
+      <a class="navbar-brand" href="#">
         <img src="https://pngimg.com/uploads/pizza/pizza_PNG7136.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
         Famiglia Pizzeria
       </a>
@@ -46,7 +48,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="fp_contact.html">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="fp_order.html">Order Online</a>
@@ -54,55 +56,107 @@
         </ul>
       </div>
     </nav>
-  
-    <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container align-items-center">
-        <br /><br  />
-        <h1 class="display-4"><span>Famiglia Pizzeria </span></h1>
-        <p class="lead"><i>Making Authentic Pizzas since 1997 </i></p>
-      </div>
-    </div>
-    <div class="container_pizzaOptions">
 
-    <h1>Menus</h1>
-</div>
-    <!--Information cards-->
-    <div class="container infoCards">
-      <!-- <h1 class="sectionTitle">Come enjoy the best Northeast Florida Pizza!</h1> -->
-      <div class="row">
-        <div class="col-md" data-aos="zoom-in">
-          <div class="card">
-            <img src="meatballs.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Starters</h5>
-              <p class="card-text">In 1989 we became committed to making the best pizza in NE Florida. To this day we are proud to say we have continued to achieve this dream. We make delicious pizzas which is guaranteed to satisfy with every slice and bite.</p>
-              <a href="fp_starters.html" class="btn btn-danger" data-aos="flip-right">Starters Menu</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md" data-aos="zoom-in">
-          <div class="card">
-            <img src="pizzaimage2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pizzas</h5>
-              <p class="card-text">Our pizzas are the pride of our establishment. We only use authentic and locally sourced ingredients.. Come to our restaurant or order pickup or delivery and try our mouth watering concoctions.</p>
-              <a href="fp_pizzas.html" class="btn btn-danger" data-aos="flip-right">Pizza Menu</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md" data-aos="zoom-in">
-          <div class="card" >
-            <img src="cannoli.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Desserts</h5>
-              <p class="card-text">Our experienced pizza chefs have be trained to make pizza using traditional methods and to the highest of quality. We are also committed to welcoming upcoming talent into our highly respected training program.</p>
-              <a href="fp_desserts.html" class="btn btn-danger" data-aos="flip-right">Dessert Menu</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container align-items-center">
+      <br /><br  />
+      <h1 class="display-4"><span>Famiglia Pizzeria </span></h1>
+      <p class="lead"><i>Making Authentic Pizzas since 1997 </i></p>
     </div>
+  </div>
+
+
+  <div class="container_about">
+    <h1>Build Order</h1>
+    <div class="button-parent">
+        <div class="button-parent--inner">
+          
+          <div class="button-item">
+            <h3>Pizzas</h3>
+            <h2>Jordan Ann</h2>
+    <p>garlic & oil base, mozzarella, pepperoni, sausage, 
+      baby spinach, roasted red pepper, red onion</p>
+    <!-- <h4>$ 13 / 16 / 22</h4> -->
+    <div>
+        <input type="submit" class="priceButton" onclick="" value="13$">
+        <input type="submit" class="priceButton" onclick="" value="16$">
+        <input type="submit" class="priceButton" onclick="" value="22$">
+                        
+    </div>
+            <a href="" class="btn-1">Add To Cart</a>
+          </div>
+          
+          <div class="button-item">
+            <h2>Gladiator</h2>
+    <p>red base, extra mozzarella, pepperoni, sausage, ham, bacon</p>
+    <!-- <h4>$ 14 / 17 / 23</h4> -->
+    <div>
+        <input type="submit" onclick="" value="13$">
+        <input type="submit" onclick="" value="16$">
+        <input type="submit" onclick="" value="22$">
+                        
+    </div>
+            <a href="" class="btn-2">Add To Cart</a>
+          </div>
+          
+          <div class="button-item">
+            <h2>Mona Lisa</h2>
+    <p>red base, mozzarella, pepperoni, sausage, ham, mushroom, green pepper, 
+      kalamata olive, red onion
+    </p>
+    <div>
+        <input type="submit" onclick="" value="13$">
+        <input type="submit" onclick="" value="16$">
+        <input type="submit" onclick="" value="22$">
+                        
+    </div>
+            <a href="" class="btn-3"><span>Add To Cart</span></a>
+          </div>
+          
+          <div class="button-item">
+            <h2>South Pacific</h2>
+    <p>oil base, mozzarella, bacon, ham, baby spinach, fresh pineapple, roasted 
+      red pepper
+    </p>
+    <div>
+        <input type="submit" onclick="" value="13$">
+        <input type="submit" onclick="" value="16$">
+        <input type="submit" onclick="" value="22$">
+                        
+    </div>
+            <a href="" class="btn-4"><span>Add To Cart</span></a>
+          </div>
+
+          <div class="button-item">
+            <h2>Paid Vacation</h2>
+    <p>red base, mozzarella, fresh garlic, sausage, green pepper, roasted red pepper, 
+      red onion
+    </p>
+    <div>
+        <input type="submit" onclick="" value="13$">
+        <input type="submit" onclick="" value="16$">
+        <input type="submit" onclick="" value="22$">
+                        
+    </div>
+            <a href="" class="btn-5">Add to Cart</a>
+          </div>
+
+          <div class="button-item">
+            <h2>Bruschetta</h2>
+            <p>garlic & oil base, mozzarella, bacon, roma tomato, green pepper, red onion</p>
+            <div>
+                <input type="submit" onclick="" value="13$">
+                <input type="submit" onclick="" value="16$">
+                <input type="submit" onclick="" value="22$">
+                                
+            </div>
+            <a href="" class="btn-6">Add to Cart</a>
+          </div>
+        </div>
+      </div>     
+  </div>
+
 
     <!--Contact us section-->
   <div class="container-fluid contactUs">
@@ -119,7 +173,7 @@
         <p>Reservations by phone: (904) 123-1111</p>
         <!-- <p><i>reservations@FamigliaPizzeria.com</i></p> -->
         <p>19 7th Street S | Jacksonville Beach, Florida | 32250</p>
-        <a href="fp_order.html" class="btn btn-danger">Order Online</a>
+        <a href="#" class="btn btn-danger">Order Online</a>
         <p></p>
         <hr>
         <p><b>Mon - Thurs:</b> 12pm to 11pm</p>
