@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,24 +50,35 @@ body {
 }
 
 
-.sectionTitle, .container_pizzaOptions, .container_about, 
+.sectionTitle, .container_pizzaOptions, .container_about, .menu_header,
 .container_dessertOptions, .container_startersOptions, .container_order {
     padding: 2rem;
     text-align: center;
 
 }
 
-.container_pizzaOptions h1, .container_about h1, 
+.container_pizzaOptions h1, .container_about h1, .menu_header,
 .container_startersOptions h1, .container_dessertOptions h1 {
-    font-size: 100px;
+    font-size: 110px;
+}
+.starters_header, .pizzas_header, .desserts_header {
+    font-size: 60px;
+    font-family: fantasy;
+    text-align: center;
+}
+.col-sm {
+    text-align: center;
 }
 .col-md {
     padding-bottom: 2rem;
+    
 }
+
 
 .card-body .btn {
     display: flex;
     justify-content: center;
+
 }
 
 .contactUs {
@@ -166,6 +177,4 @@ form {
  }
 
  /*Build Order Styles*/
-
-
 
