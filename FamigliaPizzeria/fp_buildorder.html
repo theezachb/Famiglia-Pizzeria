@@ -18,6 +18,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="fp_index.css" rel="stylesheet" />
     <script src="fp_orderform.js"></script>
+    <script src="fp_cart.js" async></script>
   </head>
 
   <body>
@@ -60,96 +61,264 @@
     </div>
   </div>
 
+<!--Menu Items to add to cart-->
+  <section class="container content-section">
+      <div class="container-order-options">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="section-header">Starters</h1>
+            <div class="fp-starter-items">
+              <div class="fp-starter-item">
+                  <span class="starter-item-name">Meatball San Marzano</span>
+                  <div class="starter-item-details">
+                    <p class="starter-item-ingredients">All natural meatballs, no breading, homemade San Marzano tomato sauce</p>
+                
+                    <span class="starter-item-price">$9.50</span>
+                    <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>        
+                </div>
+              </div>
 
-  <div class="container_about">
-    <h1>Build Order</h1>
-    <div class="button-parent">
-        <div class="button-parent--inner">
-          
-          <div class="button-item">
-            <h3>Pizzas</h3>
-            <h2>Jordan Ann</h2>
-    <p>garlic & oil base, mozzarella, pepperoni, sausage, 
-      baby spinach, roasted red pepper, red onion</p>
-    <!-- <h4>$ 13 / 16 / 22</h4> -->
-    <div>
-        <input type="submit" class="priceButton" onclick="" value="13$">
-        <input type="submit" class="priceButton" onclick="" value="16$">
-        <input type="submit" class="priceButton" onclick="" value="22$">
-                        
-    </div>
-            <a href="" class="btn-1">Add To Cart</a>
-          </div>
-          
-          <div class="button-item">
-            <h2>Gladiator</h2>
-    <p>red base, extra mozzarella, pepperoni, sausage, ham, bacon</p>
-    <!-- <h4>$ 14 / 17 / 23</h4> -->
-    <div>
-        <input type="submit" onclick="" value="13$">
-        <input type="submit" onclick="" value="16$">
-        <input type="submit" onclick="" value="22$">
-                        
-    </div>
-            <a href="" class="btn-2">Add To Cart</a>
-          </div>
-          
-          <div class="button-item">
-            <h2>Mona Lisa</h2>
-    <p>red base, mozzarella, pepperoni, sausage, ham, mushroom, green pepper, 
-      kalamata olive, red onion
-    </p>
-    <div>
-        <input type="submit" onclick="" value="13$">
-        <input type="submit" onclick="" value="16$">
-        <input type="submit" onclick="" value="22$">
-                        
-    </div>
-            <a href="" class="btn-3"><span>Add To Cart</span></a>
-          </div>
-          
-          <div class="button-item">
-            <h2>South Pacific</h2>
-    <p>oil base, mozzarella, bacon, ham, baby spinach, fresh pineapple, roasted 
-      red pepper
-    </p>
-    <div>
-        <input type="submit" onclick="" value="13$">
-        <input type="submit" onclick="" value="16$">
-        <input type="submit" onclick="" value="22$">
-                        
-    </div>
-            <a href="" class="btn-4"><span>Add To Cart</span></a>
-          </div>
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Sausage San Marzano</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Italian rope sausage, peppers and onion, optional San Marzano Tomato sauce</p>
+              
+                  <span class="starter-item-price">$9.50</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
 
-          <div class="button-item">
-            <h2>Paid Vacation</h2>
-    <p>red base, mozzarella, fresh garlic, sausage, green pepper, roasted red pepper, 
-      red onion
-    </p>
-    <div>
-        <input type="submit" onclick="" value="13$">
-        <input type="submit" onclick="" value="16$">
-        <input type="submit" onclick="" value="22$">
-                        
-    </div>
-            <a href="" class="btn-5">Add to Cart</a>
-          </div>
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Pesto Gouda Cavatappi</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Cavatappi noodles, smoked gouda, cheddar, butter, fresh cream, house-made pesto, cream cheese</p>
+              
+                  <span class="starter-item-price">$6.50</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
 
-          <div class="button-item">
-            <h2>Bruschetta</h2>
-            <p>garlic & oil base, mozzarella, bacon, roma tomato, green pepper, red onion</p>
-            <div>
-                <input type="submit" onclick="" value="13$">
-                <input type="submit" onclick="" value="16$">
-                <input type="submit" onclick="" value="22$">
-                                
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Caprese Plate</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Fresh mozzarella, fresh tomato, fresh basil, EVOO, balsamic glaze</p>
+              
+                  <span class="starter-item-price">$9.50</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Famiglia Signature</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Marinated with fresh lemon, extra virgin olive oil, rosemary, garlic, salt & pepper, 
+                    topped with caramelized onions</p>
+              
+                  <span class="starter-item-price">$15.00</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Side Garden Salad</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Iceberg lettuce, cherry tomato, cucumber, shredded carrot</p>
+              
+                  <span class="starter-item-price">$5.00</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Side Caesar Salad</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Romaine lettuce, Tuscan Caesar Dressing</p>
+              
+                  <span class="starter-item-price">$6.00</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+
+              <div class="fp-starter-item">
+                <span class="starter-item-name">Side Italian Salad</span>
+                <div class="starter-item-details">
+                  <p class="starter-item-ingredients">Spring mix, fresh tomato, cucumber, parmigiano reggiano</p>
+              
+                  <span class="starter-item-price">$6.00</span>
+                  <button class="btn btn-primary starter-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
             </div>
-            <a href="" class="btn-6">Add to Cart</a>
+          </div>
+
+          <div class="col-sm">
+            <h1 class="section-header">Pizzas</h1>
+            <div class="fp-pizza-items">
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">Jordan Ann</span>
+                <div class="pizza-item-details">
+                  <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+                    
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                    
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                  
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+    
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">Gladiator</span>
+                <div class="pizza-item-details">
+                  <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+                  
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                  
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+    
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">Mona Lisa</span>
+                <div class="pizza-item-details">
+                  <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+                
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+              
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+    
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">South Pacific</span>
+                <div class="pizza-item-details">
+                  <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+              
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+              
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+            
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+    
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">Paid Vacation</span>
+                <div class="pizza-item-details">
+                  <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+            
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+            
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+          
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+    
+              <div class="fp-pizza-item">
+                <span class="pizza-item-name">Bruschetta</span>
+                <div class="pizza-item-details">
+                    <p class="pizza-item-ingredients">garlic & oil base, mozzarella, pepperoni, 
+                    sausage, baby spinach, roasted red pepper, red onion.</p>
+          
+                  <span class="pizza-item-price">$13.00 Small</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+          
+                  <span class="pizza-item-price">$16.00 Medium</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+        
+                  <span class="pizza-item-price">$22.00 Large</span>
+                  <button class="btn btn-primary pizza-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <h1 class="section-header">Desserts</h1>
+            <div class="fp-dessert-items">
+
+              <div class="fp-dessert-item">
+                <span class="dessert-item-name">Cannoli</span>
+                <div class="dessert-item-details">
+                  <p class="dessert-item-ingredients">Two crisp pastry shells stuffed with sweet ricotta and chocolate chip filling, 
+                      topped with pistachios and powdered sugar</p>
+                        
+                  <span class="dessert-item-price">$7.00</span>
+                  <button class="btn btn-primary dessert-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+        
+              <div class="fp-dessert-item">
+                <span class="dessert-item-name">Tiramisu</span>
+                <div class="dessert-item-details">
+                  <p class="dessert-item-ingredients">Lady fingers dipped in liqueur laced espresso, layered with sweetened mascarpone, 
+                    Myers's Rum and chocolate shavings</p>
+                    
+                  <span class="dessert-item-price">$9.00</span>
+                  <button class="btn btn-primary dessert-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+        
+              <div class="fp-dessert-item">
+                <span class="dessert-item-name">Sogno Di Cioccolata "Chocolate Dream"</span>
+                <div class="dessert-item-details">
+                  <p class="dessert-item-ingredients">Rich fudge brownie with chocolate mousse, fresh whipped cream and homemade 
+                    chocolate sauce.</p>
+                
+                  <span class="dessert-item-price">$8.00</span>
+                  <button class="btn btn-primary dessert-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+        
+              <div class="fp-dessert-item">
+                <span class="dessert-item-name">Strawberry Cheesecake</span>
+                <div class="dessert-item-details">
+                  <p class="dessert-item-ingredients">Creamy New York-style cheesecake topped with our strawberry puree.</p>
+            
+                  <span class="dessert-item-price">$9.00</span>
+                  <button class="btn btn-primary dessert-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>
+        
+              <div class="fp-dessert-item">
+                <span class="dessert-item-name">Limoncello and Ricotta</span>
+                <div class="dessert-item-details">
+                  <p class="dessert-item-ingredients">Impastata ricotta mix with limoncello.</p>
+        
+                  <span class="dessert-item-price">$7.00</span>
+                  <button class="btn btn-primary dessert-item-button" type="button">Add To Cart</button><br>
+                </div>
+              </div>   
+            </div>
           </div>
         </div>
-      </div>     
-  </div>
+      </div>
+    </section>
 
 
     <!--Contact us section-->
