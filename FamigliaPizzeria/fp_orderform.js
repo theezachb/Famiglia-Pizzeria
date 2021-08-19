@@ -1,8 +1,7 @@
-window.onload = init;
 
-function init() {
+window.onload = function() {
    
-   document.getElementById("delivery").onclick = turnOnDelivery;
+   document.getElementById("delivery").onclick=turnOnDelivery;
    document.getElementById("pickup").onclick=turnOnPickup;
 }
 
@@ -17,6 +16,3 @@ function turnOnPickup() {
    document.getElementById("delBox").disabled=true;
    document.getElementById("pickupBox").disabled=false;
 }
-   
-
-/* Build Order script */
